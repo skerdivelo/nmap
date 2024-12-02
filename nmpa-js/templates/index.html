@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Port Scanner</title>
+        <link rel="stylesheet" href="/static/css/style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Port Scanner</h1>
+            <p class="subtitle">
+                Easily scan and find available ports and endpoints.
+            </p>
+            <div class="form">
+                <div class="form-group">
+                    <label for="start-ip">Start IP:</label>
+                    <input
+                        type="text"
+                        id="start-ip"
+                        value="192.168.111.0"
+                        placeholder="e.g., 192.168.111.0"
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="end-ip">End IP:</label>
+                    <input
+                        type="text"
+                        id="end-ip"
+                        value="192.168.111.254"
+                        placeholder="e.g., 192.168.111.254"
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="port">Port:</label>
+                    <input
+                        type="number"
+                        id="port"
+                        value="8080"
+                        placeholder="e.g., 8080"
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="endpoint">Endpoint (optional):</label>
+                    <input
+                        type="text"
+                        id="endpoint"
+                        value="/Hi4Supervisor"
+                        placeholder="e.g., /Hi4Supervisor"
+                    />
+                </div>
+                <div class="form-group checkbox-container">
+                    <input type="checkbox" id="login-toggle" />
+                    <label for="login-toggle">Login to servers</label>
+                </div>
+                <button id="scan-button">Start Scan</button>
+            </div>
+            <div id="output" class="output"></div>
+        </div>
+
+        <!-- Password Modal -->
+        <div id="password-modal" class="modal hidden">
+            <div class="modal-content">
+                <h2>Enter Password</h2>
+                <input
+                    type="password"
+                    id="password-input"
+                    placeholder="Password"
+                />
+                <button id="password-submit">Submit</button>
+            </div>
+        </div>
+
+        <script src="/static/js/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,90 @@
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Hi4Supervisor - Login</title>
+    <link rel="shortcut icon" type="image/ico" href="image/icone/favicon.ico" />
+    <link rel=stylesheet href="css/colori.css?28112024142834" type="text/css" media="screen"/>    
+    <link rel=stylesheet href="login/login.css?28112024142834" type="text/css" media="screen"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="login/particles.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">    
+  </head>
+
+  <body cz-shortcut-listen="true">
+  	<div id="loading">
+		<div id="loading-center">
+			<div id="loading-center-absolute">
+				<div class="object" id="object_four"></div>
+				<div class="object" id="object_three"></div>
+				<div class="object" id="object_two"></div>
+				<div class="object" id="object_one"></div>
+			</div>
+		</div>
+	</div>
+	
+<!--	<canvas id="canvas"></canvas> -->
+	
+	
+	<div id="divLogin" class=" errorLogin >">
+	  <img id="divImgLogo" src="image/icone/logoLogin.png"/>
+	  <div class="login">
+	    <form method="post" action="Home">
+	    
+	      <p><i class='icon icon-user'></i>
+	      	 <input class="inputValue" type="text" name="username" value="" placeholder="Username\Email">
+	      </p>
+	      <p><i class='icon icon-key'></i>
+	      	 <input class="inputValue" type="password" name="userpass" value="" placeholder="Password">
+	      </p>
+	      	      
+	      <p class="submit"><input class="buttonLogin" type="submit" name="commit" value="Login"></p>
+	      
+	    </form>
+	  </div> 
+	</div>	
+	
+	
+	<script type="text/javascript">
+	
+		$(function() {
+/*			
+			Particles.init({
+			    selector: '#canvas',
+			    maxParticles: 100,
+			    connectParticles: true,
+			    color:"#ffffff",
+			    responsive: [{
+			                   breakpoint: 768,
+			                   options: {
+			                     maxParticles: 50,
+			                     color: '#ffffff',
+			                     connectParticles: true
+			                   }
+			                 }, {
+			                   breakpoint: 425,
+			                   options: {
+			                     maxParticles: 30,
+			                     connectParticles: true
+			                   }
+			                 }, {
+			                   breakpoint: 320,
+			                   options: {
+			                     maxParticles: 0
+			              
+			                   }
+			                 }
+			               ]
+            });
+*/			
+			$("#loading").fadeOut(700);
+		});
+		
+	</script>
+	
+  </body>
+</html>
